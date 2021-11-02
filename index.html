@@ -4,10 +4,10 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="icon" type="image/png" href="assets/logo64.png">
+<link rel="stylesheet" href="assets/fa.all.min.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="assets/fa.all.min.css">
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@600&display=swap" rel="stylesheet"> 
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@400;500;700&display=swap" rel="stylesheet"> 
 <style>
 body, html {
   height: 100%;
@@ -16,7 +16,8 @@ body, html {
   scroll-behavior:smooth;
 }
 
-a { color: white; text-decoration: none; }
+a { color: white; text-decoration: none; font-weight:700 ; }
+p, li, h5 { font-weight:400 ;}
 
 .hero-image {
   height: 100%;
@@ -43,8 +44,9 @@ a { color: white; text-decoration: none; }
   transform: translate(-50%, -50%);
   color: whitesmoke;
   font-family: 'Noto Sans Mono', monospace;
-  font-weight: 800;
+  font-weight: 500;
   font-style: normal;
+  width: 80%;
 }
 
 .hero-text button {
@@ -106,9 +108,10 @@ a { color: white; text-decoration: none; }
 
 <div class="topnav" id="myTopnav">
   <a href="#home" class="active"><img src="assets/logo64.png" height="14px" /></a>
-  <a href="#what">What</a>
   <a href="#who">Who</a>
+  <a href="#what">What</a>
   <a href="#how">How</a>
+  <a href="#when">When</a>
   <a href="#help">Help</a>
   <a href="javascript:void(0);" class="icon" onclick="myFunction()">
     <i class="fa fa-bars"></i>
@@ -118,27 +121,15 @@ a { color: white; text-decoration: none; }
 <div class="hero-image m-home" id="home" >
   <div class="hero-text">
     <h1 style="font-size:50px">GET WILD AGAIN</h1>
-    <h3>with WILDR</h3>
-  </div>
-</div>
-
-<div class="hero-image m-what" id="what" >
-  <div class="hero-text ta-left">
-    <h1 style="font-size:50px">The Project</h1>
-
-<p>It's not only about staking cardano. Every staking pool owner knows that. It can't be.</p>
-<p>So I've been asking myself this : <strong>What could it be then ?</strong> <strong>And why should I decide this alone ?</strong></p>
-<P>What if <strong>you</strong> were the one deciding what it could be ?</p>
-<p>That's the idea !</p>
-<p>I provide you with a <strong>safe and reliable infrastructure</strong> to stake your cardano.</p>
-<p>Then you, <strong>all of you, dear delegators</strong> could then decide which organizations you'd like to support.</p>
-
+    <p>with</p>
+    <h1><a href="https://cardanoscan.io/pool/57a5c4cfe6b567abe4f5049270845b340b094c1fbf3f3e0a167f30f7">[<u>WILDR</u>]</a></h1>
   </div>
 </div>
 
 <div class="hero-image m-who" id="who" >
   <div class="hero-text ta-left">
-    <h1 style="font-size:50px">About Me & WILDR</h1>
+    <h1 style="font-size:50px">WILDR & I</h1>
+    <h5>In a few words</h5>
     <div>
       <li>First. I was curious.</li>
       <li>Second. I got surprised.</li>
@@ -150,23 +141,48 @@ a { color: white; text-decoration: none; }
   </div>
 </div>
 
+
+<div class="hero-image m-what" id="what" >
+  <div class="hero-text ta-left">
+    <h1 style="font-size:50px">The Project</h1>
+<div>
+<p>I do not consider myself as a nerd, but I do like computers and stuff of these kinds.</p>
+<p>When crypto came up, I tested my trading skills. I quickly realized it wasn't my "thing".</p>
+<p>But the concept around the crypto got my attention. Particularly the proof of staking which cardano is based on.<p>
+<p>So here I am, operating a <a href="https://cardano.org/stake-pool-delegation/">stake pool</a> now, looking after a 1x relay, 1x producer, 1x monitoring system.</p>
+<p>But <b>it's not only about staking</b> cardano. Every staking pool owner knows that. <b>It can't be.</b></p>
+<p>So I've been asking myself this : <strong>What could it be then ?</strong> <strong>And why should I decide this alone ?</strong></p>
+<P>What if <strong>you</strong> were the one deciding what it could be ?</p>
+<p>Here is the idea !</p>
+<p>I provide you with a <strong>safe and reliable infrastructure</strong> to stake your cardano.</p>
+<p>Then you, <strong>all of you, dear delegators</strong> could then decide which organizations (#environment #animals #green #sustainable #recycling) you'd like to support.</p>
+<p>For the <i>how</i>, well I have some ideas but again, I want to do it with you, so let's discuss it together first.</P>
+<p>Eventually when we get rewarded, I will transfer the 1% margin to the elected org. What do you think ?</p>
+</div>
+  </div>
+</div>
+
 <div class="hero-image m-how" id="how" >
-  <div class="hero-text" style="width: 60%;">
+  <div class="hero-text ta-left">
     <h1 style="font-size:50px">How to join ?</h1>
-<p>Buy some cardano on one exchange platform. Kraken.com for instance.</p>
-<p>Create a wallet. With Yoroi on your smartphone, or Daedalus on your laptop.</p>
-<p>Make multiples copies of the many words you were given. These are the keys of your wallet.</P>
+<div>
+<p>Buy some cardano on one exchange platform. <a href="https://kraken.com">kraken.com</a> for instance.</p>
+<p>Create a wallet. With <a href="https://yoroi-wallet.com/#/">Yoroi</a> on your smartphone, or <a href="https://daedaluswallet.io/">Daedalus</a> on your laptop.</p>
+<p><b><u>Make/Backup multiple copies of the mnemonic sentence</b></u> you were given. These words are the unique keys of your wallet.</P>
 <p>At this point, you should find a bundle of adresses in your "receive" tab. Copy the first one.</p>
-<p>Go to the exchange and perform a withdraw, providing the amount of cardano you want to transfer (don't be shy :-)) and paste the address.</p>
-<p>After a while you should see your updated wallet balance (the amount you withdrawed minus the transaction fee ~1 ADA)</p>
-<p>Once you did this, you go to the delegate Tab, and delegate your wallet to this stake pool (aka WILDR, remember : WILDR like the page title here)</p>
+<p>Go to the exchange to perform a <b>withdraw</b>, fill in the amount of cardano (don't be shy :-)) you're willing to transfer plus the address. Confirm.</p>
+<p>After a while you should witness the increase of your wallet balance (of precisely the amount you moved minus the transaction fee ~1 ADA)</p>
+<p>Once you did this, you go to the delegate Tab, and delegate your wallet to this stake pool (aka <b>[WILDR]</b> like the page title here)</p>
 <p>In order to do this you will need to deposit 2 ADA, 2 ADA you will get back if you ever decide to retire from stacking.</p>
 <p>And because registering to a stake pool is a transaction, you will need to pay a transaction fee, ~ 1 ADA.</p>
-<p>You might wonder what I'm going to do with you wallet ? Nothing. I do not own your wallet, you just told the system that your wallet was not dedicated to trading but to stacking, and that you were in my team that's all :-).</p>
-<p>Whatever you decide to do, you are always the owner of your funds.</p>
-<p>You will probably have a lot of other questions. Find below all the great articles I had the pleasure to read."
+<p>You might wonder what I'm going to do with you wallet ? Nothing. You still are the owner of your wallet and your money Chief !</p>
+<p>Stacking is rather like telling the system that you are not into trading but rather into supporting the concept, and willing to be a part of it. It's all about being a team</p>
+<p>Once the pool is designated to produce blocks, we will all get rewarded.</p>
+<p>You might wonder why do I need you ? Because the more we are the merrier. And, last but not hte least, the more we get to produce blocks and get rewarded.</p>
+</div>
 
 <div>
+<p>You might have a thousand questions yet. Have a look at these.</p>
 <li><a href="https://docs.cardano.org/introduction/">cardano.org</a></li>
 <li><a href="https://static.adapools.org/docs/newbie-ultimate-guide.pdf">adapools.org newbie guide</a></li>
 <li><a href="https://www.kraken.com/learn/what-is-cardano-ada">kraken.com about cardano</a></li>
@@ -178,7 +194,7 @@ a { color: white; text-decoration: none; }
 
 <div class="hero-image m-help" id="help" >
   <div class="hero-text">
-    <h1 style="font-size:50px">How To Reach Me ?</h1>
+    <h1 style="font-size:50px">To Reach Us ? Me ?</h1>
     <div class="fa icon-bar">
       <a href="https://t.me/joinchat/3sWau73-5UlkNTc0"><i class="fab fa-telegram"></i></a>
       <a href="https://twitter.com/wildr_pool"><i class="fab fa-twitter"></i></a>
