@@ -6,14 +6,17 @@
 <link rel="icon" type="image/png" href="assets/logo64.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="assets/fa.all.min.css">
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@600&display=swap" rel="stylesheet"> 
 <style>
 body, html {
   height: 100%;
   margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Noto Sans Mono', monospace, Arial, Helvetica, sans-serif;
+  scroll-behavior:smooth;
 }
+
+a { color: white; text-decoration: none; }
 
 .hero-image {
   height: 100%;
@@ -22,12 +25,15 @@ body, html {
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(200, 200, 200, 0.1)), url("assets/view.jpg");
 }
-.m-home    { background-image: linear-gradient(rgba(200, 200, 200, 0.3), rgba(200, 200, 200, 0.3)), url("assets/view.jpg"); }
-.m-news    { background-image: linear-gradient(rgba(200, 200, 200, 0.2), rgba(200, 200, 200, 0.2)), url("assets/view.jpg"); }
+
+/*
+.m-home    { background-image: linear-gradient(to-bottom, rgba(200, 200, 200, 0.3), rgba(200, 200, 200, 0.1)), url("assets/view.jpg"); }
+.m-project { background-image: linear-gradient(rgba(200, 200, 200, 0.2), rgba(200, 200, 200, 0.2)), url("assets/view.jpg"); }
 .m-contact { background-image: linear-gradient(rgba(200, 200, 200, 0.1), rgba(200, 200, 200, 0.1)), url("assets/view.jpg"); }
 .m-about   { background-image: linear-gradient(rgba(200, 200, 200, 0), rgba(200, 200, 200, 0)), url("assets/view.jpg"); }
-
+*/
 
 .hero-text {
   text-align: center;
@@ -40,6 +46,7 @@ body, html {
   font-weight: 800;
   font-style: normal;
 }
+
 .hero-text button {
   border: none;
   outline: 0;
@@ -57,7 +64,7 @@ body, html {
 
 
 .topnav {
-  background-color: #333;
+  background-color: #111;
   overflow: hidden;
   position: fixed;
   top: 0;
@@ -74,7 +81,7 @@ body, html {
   font-size: 15px;
 }
 .topnav a:hover {
-  background-color: #ddd;
+  background-color: #fff;
   color: black;
 }
 .topnav a.active {
@@ -84,6 +91,14 @@ body, html {
 .topnav .icon {
   display: none;
 }
+
+.ta-left { text-align: initial; }
+
+.icon-bar a {
+  color: white;
+  font-size: xxx-large;
+  margin: 10px;
+}
 </style>
 <title>WILDR</title>
 </head>
@@ -91,9 +106,10 @@ body, html {
 
 <div class="topnav" id="myTopnav">
   <a href="#home" class="active"><img src="assets/logo64.png" height="14px" /></a>
-  <a href="#news">News</a>
-  <a href="#contact">Contact</a>
-  <a href="#about">About</a>
+  <a href="#what">What</a>
+  <a href="#who">Who</a>
+  <a href="#how">How</a>
+  <a href="#help">Help</a>
   <a href="javascript:void(0);" class="icon" onclick="myFunction()">
     <i class="fa fa-bars"></i>
   </a>
@@ -102,24 +118,71 @@ body, html {
 <div class="hero-image m-home" id="home" >
   <div class="hero-text">
     <h1 style="font-size:50px">GET WILD AGAIN</h1>
+    <h3>with WILDR</h3>
   </div>
 </div>
 
-<div class="hero-image m-news" id="news" >
-  <div class="hero-text">
-    <h1 style="font-size:50px">#NEWS</h1>
+<div class="hero-image m-what" id="what" >
+  <div class="hero-text ta-left">
+    <h1 style="font-size:50px">The Project</h1>
+
+<p>It's not only about staking cardano. Every staking pool owner knows that. It can't be.</p>
+<p>So I've been asking myself this : <strong>What could it be then ?</strong> <strong>And why should I decide this alone ?</strong></p>
+<P>What if <strong>you</strong> were the one deciding what it could be ?</p>
+<p>That's the idea !</p>
+<p>I provide you with a <strong>safe and reliable infrastructure</strong> to stake your cardano.</p>
+<p>Then you, <strong>all of you, dear delegators</strong> could then decide which organizations you'd like to support.</p>
+
   </div>
 </div>
 
-<div class="hero-image m-contact" id="contact" >
-  <div class="hero-text">
-    <h1 style="font-size:50px">#CONTACT</h1>
+<div class="hero-image m-who" id="who" >
+  <div class="hero-text ta-left">
+    <h1 style="font-size:50px">About Me & WILDR</h1>
+    <div>
+      <li>First. I was curious.</li>
+      <li>Second. I got surprised.</li>
+      <li>Then. I liked what I saw.</li>
+      <li>Eventually. I was seduced.</li>
+      <li>In the end. I had to be a part of it.</li>
+      <li><b>WILDR</b> was born.
+    </div>
   </div>
 </div>
 
-<div class="hero-image m-about" id="about" >
+<div class="hero-image m-how" id="how" >
+  <div class="hero-text" style="width: 60%;">
+    <h1 style="font-size:50px">How to join ?</h1>
+<p>Buy some cardano on one exchange platform. Kraken.com for instance.</p>
+<p>Create a wallet. With Yoroi on your smartphone, or Daedalus on your laptop.</p>
+<p>Make multiples copies of the many words you were given. These are the keys of your wallet.</P>
+<p>At this point, you should find a bundle of adresses in your "receive" tab. Copy the first one.</p>
+<p>Go to the exchange and perform a withdraw, providing the amount of cardano you want to transfer (don't be shy :-)) and paste the address.</p>
+<p>After a while you should see your updated wallet balance (the amount you withdrawed minus the transaction fee ~1 ADA)</p>
+<p>Once you did this, you go to the delegate Tab, and delegate your wallet to this stake pool (aka WILDR, remember : WILDR like the page title here)</p>
+<p>In order to do this you will need to deposit 2 ADA, 2 ADA you will get back if you ever decide to retire from stacking.</p>
+<p>And because registering to a stake pool is a transaction, you will need to pay a transaction fee, ~ 1 ADA.</p>
+<p>You might wonder what I'm going to do with you wallet ? Nothing. I do not own your wallet, you just told the system that your wallet was not dedicated to trading but to stacking, and that you were in my team that's all :-).</p>
+<p>Whatever you decide to do, you are always the owner of your funds.</p>
+<p>You will probably have a lot of other questions. Find below all the great articles I had the pleasure to read."
+
+<div>
+<li><a href="https://docs.cardano.org/introduction/">cardano.org</a></li>
+<li><a href="https://static.adapools.org/docs/newbie-ultimate-guide.pdf">adapools.org newbie guide</a></li>
+<li><a href="https://www.kraken.com/learn/what-is-cardano-ada">kraken.com about cardano</a></li>
+</div>
+
+    </div>
+  </div>
+</div>
+
+<div class="hero-image m-help" id="help" >
   <div class="hero-text">
-    <h1 style="font-size:50px">#ABOUT</h1>
+    <h1 style="font-size:50px">How To Reach Me ?</h1>
+    <div class="fa icon-bar">
+      <a href="https://t.me/joinchat/3sWau73-5UlkNTc0"><i class="fab fa-telegram"></i></a>
+      <a href="https://twitter.com/wildr_pool"><i class="fab fa-twitter"></i></a>
+    </div>
   </div>
 </div>
 
