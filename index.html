@@ -10,7 +10,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
   <link href='https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@400;500;700&amp;display=swap' rel='stylesheet'>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="assets/jquery.min.js"></script>
   <style>
   body, html {
   height: 100%;
@@ -23,7 +23,6 @@
   p, li, h5 { font-weight:400 ;}
 
   .hero-image {
-    margin-top: 50px;
     height: auto;
     min-height: 100%;;
     background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(200, 200, 200, 0.1)), url("assets/view.jpg");
@@ -39,8 +38,8 @@
   position: relative;
   left: 50%;
   transform: translate(-50%, 0%);
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding-top: 100px;
+  padding-bottom: 100px;
   color: whitesmoke;
   font-family: 'Noto Sans Mono', monospace;
   font-weight: 500;
@@ -49,7 +48,7 @@
   }
 
   .m-home {
-  height: 100%;
+  height: 600px;
   left: 50%;
   transform: translate(-50%);
   }
@@ -76,6 +75,7 @@
     top: 0; /* Position the navbar at the top of the page */
     width: 100%; /* Full width */
     height: 50px;
+    z-index:2;
   }
   .topnav a {
   float: left;
@@ -92,7 +92,7 @@
   }
   .topnav a.active {
   background-color: white;/* #04AA6D; */
-  color: white;
+  color: black;
   }
   .topnav .icon {
   display: none;
@@ -117,7 +117,7 @@
   }
 
   @media screen and (max-width: 600px) {
-    .topnav.responsive {position: relative; }
+    .topnav.responsive {position: relative; height: auto;}
     .topnav.responsive a.icon {
       position: absolute;
       right: 0;
@@ -146,8 +146,8 @@
 
   $(document).ready(function(){
     $(function() {
-      $(".myTopnav a").click(function() {
-        $(".myTopnav a").removeClass("active");
+      $(".topnav a").click(function() {
+        $(".topnav a").removeClass("active");
         $(this).addClass("active");
       });
     });
