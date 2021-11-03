@@ -15,6 +15,7 @@
   body, html {
   height: 100%;
   margin: 0;
+  background-color: black;
   font-family: 'Noto Sans Mono', monospace, Arial, Helvetica, sans-serif;
   scroll-behavior:smooth;
   }
@@ -86,6 +87,7 @@
   text-decoration: none;
   font-size: 18px;
   }
+  .topnav a:first-child { padding: 0px; }
   .topnav a:hover {
   background-color: #fff;
   color: black;
@@ -106,7 +108,9 @@
   margin: 10px;
   }
 
-  .logo { width: 20px; }
+  .logo { width: 50px; }
+  .warning { background-color: yellow; color: black; }
+
 
   @media screen and (max-width: 600px) {
     .topnav a:not(:first-child) {display: none;}
@@ -117,7 +121,7 @@
   }
 
   @media screen and (max-width: 600px) {
-    .topnav.responsive {position: relative; height: auto;}
+    .topnav.responsive {position: fixed; height: auto;}
     .topnav.responsive a.icon {
       position: absolute;
       right: 0;
@@ -132,7 +136,7 @@
       background-color: #fff;
       color: black;
     } 
-  } 
+  }
   </style>
   <script>
   function myFunction() {
@@ -146,9 +150,10 @@
 
   $(document).ready(function(){
     $(function() {
-      $(".topnav a").click(function() {
+      $(".topnav a:not(.icon)").click(function() {
         $(".topnav a").removeClass("active");
         $(this).addClass("active");
+        $(".topnav.responsive").toggleClass("responsive");
       });
     });
   });  
@@ -168,7 +173,7 @@
   <div class="hero-image">
     <div class="hero-text m-home" id="home">
       <h1 style="font-size:50px">GET WILD AGAIN</h1>
-      <p>with</p>
+      <p>Stack with</p>
       <h1>[<a href="https://cardanoscan.io/pool/57a5c4cfe6b567abe4f5049270845b340b094c1fbf3f3e0a167f30f7" target="_blank">WILDR</a>]</h1>
     </div>
     <div class="hero-text ta-left" id="who">
@@ -208,7 +213,7 @@
       <div>
         <p>Buy some cardano on one exchange platform. <a href="https://kraken.com" target="_blank">kraken.com</a> for instance.</p>
         <p>Create a wallet. With <a href="https://yoroi-wallet.com/#/" target="_blank">Yoroi</a> on your smartphone, or <a href="https://daedaluswallet.io/" target="_blank">Daedalus</a> on your laptop.</p>
-        <p><b><u>Make/Backup multiple copies of the mnemonic sentence</u></b> you were given. These words are the unique keys of your wallet.</p>
+        <p><span class="warning"><b><u>Make/Backup multiple copies of the mnemonic sentence</u></b></span> you were given. These words are the unique keys of your wallet.</p>
         <p>At this point, you should find a bundle of adresses in your "receive" tab. Copy the first one.</p>
         <p>Go to the exchange to perform a <b>withdraw</b>, fill in the amount of cardano (don't be shy :-)) you're willing to transfer plus the address. Confirm.</p>
         <p>After a while you should witness the increase of your wallet balance (of precisely the amount you moved minus the transaction fee ~1 ADA)</p>
