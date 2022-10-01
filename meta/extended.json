@@ -9,8 +9,8 @@
         },
         "about": {
             "me": "WILDR Ops, Cardano curious, Tech lover",
-            "server": "AWS hosted, 1x relay, 1x prod, 1x monitoring",
-            "company": "WILDR ltd"
+            "server": "BARE hosted, 1x relay, 1x prod, 1x monitoring",
+            "company": "WILDR fam"
         }
     },
     "my-pool-ids": {
